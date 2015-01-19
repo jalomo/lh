@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ecf0f1"
+    android:layout_gravity="center">
+	
+    
+    <RelativeLayout
+         android:id="@+id/pagina_"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+         android:background="#ecf0f1"
+         android:padding="3dip"
+          >
+ 		
+          <ImageView
+              android:id="@+id/list_image1"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:src="@drawable/pagina2"
+              android:onClick="pagina" />
+          
+          <ImageView
+              android:id="@+id/list_image2"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:layout_toRightOf="@+id/list_image1"
+              android:src="@drawable/llamar1"
+              android:onClick="llamar" />
+    
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+         android:id="@+id/pagina_1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+       android:layout_gravity="center"
+         android:background="#ecf0f1"
+         android:padding="3dip"
+          >
+ 		
+          <ImageView
+              android:id="@+id/list_image3"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:src="@drawable/facebook1"
+              android:onClick="pagina_facebook" />
+          
+          <ImageView
+              android:id="@+id/list_image4"
+              android:layout_width="150dp"
+              android:layout_height="150dp"
+              android:layout_toRightOf="@+id/list_image3"
+              android:src="@drawable/twitter1"
+              android:onClick="pagina_twitter" />
+    
+    </RelativeLayout>
+
+   
+
+</LinearLayout>

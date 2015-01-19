@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ecf0f1"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="#ddd"
+        android:layout_marginRight="5dip">
+ 
+        <ImageView
+            android:id="@+id/list_image2"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:src="@drawable/ic_icon"/>
+ 
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="@string/hello_world"
+        android:textColor="#e67e22"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+         android:text="Votos:255"
+        />
+    
+    <TextView
+        android:id="@+id/minutos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descripcion"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+         android:text="45 min"
+        />
+ 
+    <!-- Rightend Duration -->
+    
+ 
+     <!-- Rightend Arrow -->
+     <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+     
+     <EditText
+        android:id="@+id/id_categoria"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:visibility="gone" />
+     
+     
+      <EditText
+        android:id="@+id/texto_"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:visibility="gone" />
+      
+      
+      <EditText
+        android:id="@+id/url_"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:visibility="gone" />
+      
+      <EditText
+        android:id="@+id/url_video"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:ems="10"
+        android:visibility="gone" />
+     
+    
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout
+         android:id="@+id/busca_"
+         android:layout_width="334dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="5dip"
+         android:background="#8cca41"
+         android:padding="3dip"
+         android:onClick="atras" >
+ 		
+          <ImageView
+              android:id="@+id/list_image3"
+              android:layout_width="25dip"
+              android:layout_height="25dip"
+              android:src="@drawable/back" />
+         
+	   <TextView
+        android:id="@+id/tipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/list_image3"
+        android:textColor="#fff"
+        android:textSize="15dip"
+        android:layout_marginTop="1dip"
+   
+         android:text="Atras"
+        />
+ 
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="116dp"
+        android:background="#ecf0f1"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:background="#ddd"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/list_image2"
+            android:layout_width="70dip"
+            android:layout_height="90dp"
+            android:layout_weight="3.44"
+            android:src="@drawable/ic_icon" />
+
+    </LinearLayout>
+ 
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Pay de fresas con queso"
+        android:textColor="#e67e22"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Artist Name -->
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+         android:text="Votos:255"
+        />
+
+    <TextView
+        android:id="@+id/minutos"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/title"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="45 min"
+        android:textColor="#000"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/descripcion"
+        android:layout_centerVertical="true"
+        android:background="#8cca41"
+        android:textColor="#fff"
+        android:text="Ok" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/minutos"
+        android:layout_centerVertical="true"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:rating="2.0"
+        android:stepSize="1.0" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/button2"
+        android:background="#0071bc"
+        android:text=""
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ratingBar"
+        android:text="Compartir"
+        android:background="#0071bc"
+        android:textColor="#fff" />
+    
+</RelativeLayout>
+
+    
+    <TabHost
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="0dp">
+        
+        <TabWidget      
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginBottom="-4dp" />
+        
+        <FrameLayout 
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="0dp"
+                android:layout_weight="1"/>
+	               
+        </LinearLayout>
+</TabHost>
+    
+</LinearLayout>

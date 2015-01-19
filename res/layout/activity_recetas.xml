@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e67e22" >
+    
+     <RelativeLayout
+         android:id="@+id/busca_"
+         android:layout_width="334dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="5dip"
+         android:background="#8cca41"
+         android:padding="3dip"
+         android:onClick="atras" >
+ 		
+          <ImageView
+              android:id="@+id/list_image3"
+              android:layout_width="25dip"
+              android:layout_height="25dip"
+              android:src="@drawable/back" />
+         
+	   <TextView
+        android:id="@+id/tipo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_toRightOf="@+id/list_image3"
+        android:textColor="#fff"
+        android:textSize="15dip"
+        android:layout_marginTop="1dip"
+   
+         android:text="postres"
+        />
+ 
+    </RelativeLayout>
+	
+
+	<!-- RelativeLayout android:id="@+id/busca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        
+        android:layout_marginRight="5dip">
+ 		
+	    <EditText
+	        android:id="@+id/inputSearch"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/button1"
+	        android:hint="Busca recetas..."
+	        android:inputType="textVisiblePassword" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/inputSearch"
+           android:layout_alignParentRight="true"
+           android:layout_alignTop="@+id/inputSearch"
+           android:background="#8cca41"
+           android:text="Buscar"
+           android:textColor="#fff" />
+ 
+    </RelativeLayout-->
+	
+    	
+    <ListView
+		            android:id="@+id/list"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:divider="#b5b5b5"
+		            android:dividerHeight="0.5dp"
+		            android:background="@android:color/white"
+		             >
+		        </ListView>
+    
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <include layout="@layout/header_layout" />
+
+    
+
+    <RelativeLayout
+         android:id="@+id/busca_"
+         android:layout_width="334dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_marginRight="5dip"
+         android:background="#8cca41"
+         android:padding="3dip"
+         android:onClick="atras" 
+         android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Agrega ingrediente"
+            android:background="@drawable/botton_c"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/button1"
+            android:text="Nueva lista"
+            android:background="@drawable/botton_c" />
+	  
+    </RelativeLayout>
+    
+   <ListView
+		            android:id="@+id/list"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:divider="#b5b5b5"
+		            android:dividerHeight="0.5dp"
+		            android:background="@android:color/white"
+		             >
+		        </ListView>
+	 
+
+</LinearLayout>
